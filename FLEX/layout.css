@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+}
+/*-------------------------------------------------------------------*/
+/*-------------------------------------header-----------------------*/
+/*----------------------------------------------------------------*/
+#header{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#header ul{
+    list-style: none;
+    padding-left: 0;
+    width: 30%;
+
+}
+#header a{
+    text-decoration: none; /* j'enléve le trait de soulignement*/
+    display: block;/* a incline en block le comportememt du retour à la ligne est géré correcte*/
+    padding: 10px;
+    font-weight: bold;
+}
