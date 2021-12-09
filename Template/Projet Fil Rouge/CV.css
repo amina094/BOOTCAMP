@@ -1,0 +1,50 @@
+
+
+.page{
+    width: 780px;
+    margin: auto;
+    font-family: 'Source sans pro', calibri, Tahoma, sans-serif;
+    font-size: 16px;
+    background-color: lightgrey;
+
+}
+h1{
+    font-size: 60PX;
+}
+h2{
+    color: blue;
+    font-weight: bold;
+}
+
+.info{
+    height: 280px;
+    float: left;
+    margin-left: 10px ;
+}
+img{
+    flex-direction: row;
+    padding-left: 400px;
+margin: auto;
+}
+
+.licence{
+    color: rgb(60, 36, 82);
+    font-weight: bold;
+}
+
+.comp{
+    padding: 15px;
+}
+.article{
+    text-align: justify;
+padding: 10px;
+width: 30%;
+}
+#spe{
+    height: 800px;
+   display: flex;
+   flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   align-items: flex-start;
+}

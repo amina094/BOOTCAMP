@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+/*-------------Exemple 1---------------*/
+.exemple1{
+    padding: 10px;
+    background-color: yellowgreen;
+}
+#exemple1{
+    margin: 20px;
+    height: 500px;
+    display: grid;
+grid-template-columns: 20% 1fr 15%;
+grid-template-rows: 80px 1fr 70px;
+grid-template-areas:
+"header header aside"
+"nav article article"
+"nav footer footer";
+grid-gap: 10px;;
+}
+#ex1Header{
+    /*grid-area: 1 / 1 / 2 / 3; */
+   grid-area: header;
+}
+#ex1Aside{
+    grid-area: aside;
+}
+#ex1Nav{
+    grid-area: nav;
+}
+#ex1Article{
+    grid-area: article;
+}
+#ex1Footer{
+    grid-area: footer;
+}
+/*--------------Exemple 2----------------*/
+#exemple2{
+    height: 500px;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr); 
+    grid-template-columns: repeat(12, 1fr); 
+    grid-gap: 10px;
+}
+.ex2{
+    font-size: 48px;
+    padding: 10px;
+    background-color: gold;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+#ex2Div1{
+  grid-column: span 12;  
+  /* grid-column:1 /12;
+  grid-column:1 / span 12 */
+}
+#ex2Div2,
+#ex2Div3{
+    grid-column: span 6;
+}
+#ex2Div4,
+#ex2Div5,
+#ex2Div6{
+    grid-column: span 4;
+}
+#ex2Div7,
+#ex2Div8,
+#ex2Div9,
+#ex2Div10{
+ grid-column: span 3;
+}
+#ex2Div11,
+#ex2Div12,
+#ex2Div13,
+#ex2Div14,
+#ex2Div15,
+#ex2Div16{
+  grid-column: span 2;  
+}
+/*-------------Exemple 3------------------*/
+#exemple3{
+    display: grid;
+    /*auto-fil:
+    ca va placer le maximum de colonnes disponibles meme si elles doivent etre vides
+    en fonction de la  taille des elememnts qui les composent 
+    minimax:
+    Ca definit une taille de colonne minimum et maximum*/
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr) );
+   /* align-items: 
+   va permettre la gestion des elemnts sur l'axe des colonnes (verticales) start | end | center|*/
+   align-items: stretch;
+   grid-gap: 20px;
+   }
+   #exemple3 img{
+       max-width: 100%;
+       /*permet d'ajouter une ombre à mon element
+       https://html-css-js.com/css/generator/box-shadow/*/
+       box-shadow: 10px 10px 6px 0px rgba(0, 0, 0, 0.3);
+   }
+   /*--------------Exemple 4---------------------*/
+   #exemple4{
+       width: 800px;
+       margin: 80px auto;
+       display: grid;
+grid-template-columns: 1fr 2fr;
+/*grid-template-rows: 1fr*/;
+grid-template-areas: 
+"contacts form";
+   }
+   #exemple4 ul{
+       list-style-type: none;
+       padding: 0;
+   }
+   #exemple4 h3{
+       font-weight: bold;
+   }
+   #contacts{
+       grid-area: contacts;
+       color: white;
+       background-color: #4b5195;
+       padding: 40px;
+   }
+   #form{
+       grid-area: form;
+       padding: 40px;
+       border: 1px solid lightgrey;
+   }
+   #form p{
+       margin: 0;
+   }
+   form{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+   }
+   form{
+       display: block;
+   }
+   input,
+   textarea{
+       width: 100%;
+       padding: 5px;
+   }
+   textarea{
+       resize: none;
+   }
+   .fullwidtch{
+       grid-column: 1  / 3;
+   }
+
+
+
+
+
+
+
+

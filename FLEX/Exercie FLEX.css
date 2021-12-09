@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+   box-sizing: border-box;
+   margin: 0;
+}
+body{
+    height: 100vh;
+   display: flex;
+  flex-direction: column;
+}
+/*---------------HEADER-------------------*/
+header{
+    flex: 2;
+background-color: red;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    flex: 1;
+    text-align: center;
+    border: 1px solid black;
+}
+/*--------------Section Centrale--------------*/
+article{
+    flex: 14;
+    display: flex;
+}
+
+p{
+    flex: 1 1 200px;
+    padding: 10px;
+    border: 1px dashed white;
+}
+aside{
+    flex: 1;
+}
+#aside1{
+    background-color: yellow;
+}
+#aside2{
+    background-color: purple;
+}
+/*-----------------------Footer-------------------*/
+footer{
+    flex: 1;
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

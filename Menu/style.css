@@ -1,0 +1,62 @@
+*{
+     margin: 0; 
+    box-sizing: border-box;
+}
+nav ul{
+  color: white;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  padding: 10px;
+ text-align: center;
+  border-right: 1px solid white;
+}
+nav ul li{
+
+    background-color: black;
+  display: block;
+    flex: 1;
+}
+nav a{
+    color: rgb(104, 5, 5);
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 10px;
+   text-align: center;
+    border-right: 1px solid white;
+}
+nav ul li:last-child a{
+border:none;
+}
+ul.sousMenu{
+  display: none;
+  position: absolute;
+  /*2-index:1000;*/
+}
+nav li:hover .sousMenu{
+  display: block;  
+}
+.sousMenu li{
+  /*
+  Calc c'est une fonction CSS qui permet de réaliser un calcul
+  ici j'ai diviser la largeur total  de ma page par le nombre de rubriaue*/
+  width: calc(100vw / 6);
+  display: block;
+}
+.sousMenu li a{
+  border-right: none;
+  border-top: 1px solid white;
+}
+.sousMenu li:hover{
+  background-color: grey;
+}
+p{
+  text-align: justify;
+  background-color: purple;
+  color: white;
+}
+
+
+
+    

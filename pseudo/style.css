@@ -1,0 +1,154 @@
+*{
+    boxzing: border-box;
+}
+.center{
+    width: 800px;
+    border: 2px dashed black;
+    margin: 20px auto;
+    padding: 10px;
+}
+em{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+/*--------------------------------------------------*/
+/*---------------------------Pseudo Classe------------*/
+/*---------------------------------------------------*/
+#ex1{
+    height: 100px;
+    width: 300px;
+    text-align: center;
+    border: 1px solid black;
+    margin: 20px auto;
+
+/*
+Lorsqu'il n'ya pas suffisament de place pour afficher le contenu d'un bloc:
+- masquer
+- afficher meme si ca dépasse
+- automatiquement céer un ascenceur me permettant de naviguer dans le texte mais en masquant le dépassement
+
+overflow: visible | scroll | auto
+scroll fait apparaitre tous les ascenceurs utiles ou pas
+
+auto ne fait apparaitre que les ascenceurs dans le sens du dépassement
+*/
+overflow: auto;
+}
+
+#ex1:hover{
+    background-color: lightblue;
+}
+
+.link:visited{
+    color: red;
+}
+
+.link:link{
+    
+    color: black;
+    text-decoration: none;
+}
+
+.link:active{
+    color: green;
+    font-style: italic;
+}
+/*-------------------------------------------------------*/
+.test2{
+    width: 300px;
+    margin: 30px auto;
+    border: 1px dotted grey;
+
+}
+p:first-child{
+    text-decoration: underline;
+}
+
+P:first-of-type{
+    color: purple;
+    font-weight: bold;
+}
+
+p:last-child{
+    text-decoration: line-through;
+}
+
+p:last-of-type{
+    color: orange;
+}
+p:nth-child(3){
+  font-style: italic;
+}
+
+/* Tous les enfants pairs qui sont des div et inclut dans une des div de classe center*/
+div.center div:nth-child(even){
+    background-color: lightblue;
+}
+/*-------------------------------------------------*/
+/*----------------------Pseudo Elements---------------------*/
+/*-----------------------------------------------------*/
+#specialDiv{
+    background-color: lightblue;
+}
+
+#specialDiv P:first-of-type{
+    background-color: yellow;
+    padding: 5px;
+}
+
+#specialDiv p:first-of-type::before{
+    content: 'Texte ajouté avant';
+    color: black;
+}
+
+#specialDiv p:nth-of-type(2){
+    background-color: red;
+    padding: 5px;
+}
+
+#specialDiv p:last-of-type{
+
+   background-color: green;
+    padding: 5px;
+}
+/*
+Dérriére et aprés le survol du dernier élément de type p inclut dqns un element d'identifiant specialDiv*/
+#specialDiv P:last-of-type:hover::after{
+    content: 'BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB';
+    font-weight: bold;
+    position: relative;
+    top: 30px;
+    font-size: 24px;
+}
+
+/*-------------------------------------------------------*/
+
+#lettrine p{
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+}
+#lettrine{
+    font-size: 3rem;
+    font-weight: bold;
+    color: gold;
+    font-family: Harrington, Zapfino;
+}
+/*--------------------------------------------------*/
+#linine p{
+text-decoration:  none;
+color: black;
+font-weight: normal;
+}
+#linine p::first-line{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffd700;
+    font-family: Harrington, Zapfino;
+}
+#linine p::selection{
+    background-color: lightblue;
+    color: red;
+}
+
+

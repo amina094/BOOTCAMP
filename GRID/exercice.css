@@ -1,0 +1,154 @@
+#container{
+    background-color: black;
+    width: 900px;
+    height: 80vh;
+    margin: 80px auto;
+    border: solid 8px black;
+
+/*largeur:13
+hauteur:13*/
+display: grid;
+grid-template-areas:
+"w1 w4 w4 w4 w4 w4 w9 w9 w9 w9 w9 wb y4"
+"w1 b1 b1 b1 b1 b1 wa wa b2 b2 b2 wb y4"
+"w1 b1 b1 b1 b1 b1 wa wa b2 b2 b2 wb y4"
+"n1 w5 n2 w6 w6 w7 y3 y3 r4 r4 r3 wb y4"
+"n1 w5 n2 w6 w6 w7 y3 y3 r4 r4 r3 wb y4"
+"n1 w5 n2 w6 w6 w7 y3 y3 r4 r4 r3 wb y4"
+"n1 w5 n2 w6 w6 w7 y3 y3 r4 r4 r3 wb y4"
+"n1 w5 n2 w6 w6 w7 y3 y3 r4 r4 r3 wb y4"
+"n1 w5 n2 y2 r2 r2 b3 b3 wg wg wf n4 n4"
+"n1 w5 n2 y2 r2 r2 b3 b3 wg wg wf n4 n4"
+"w2 r1 n2 y1 w8 w8 w8 wc wc b4 y5 we we"
+"w2 r1 n2 y1 w8 w8 w8 wc wc b4 y5 we we"
+"w2 r1 n2 y1 w8 w8 w8 wc wc b4 y5 we we"
+"w2 r1 n2 y1 w8 w8 w8 wc wc b4 y5 we we"
+"w2 r1 n2 y1 w8 w8 w8 wc wc b4 y5 we we"
+"w2 r1 n2 y1 r5 r5 n3 n3 n3 wd wd wd wd"
+"w3 w3 w3 y1 r5 r5 n3 n3 n3 wd wd wd wd";
+grid-gap: 8px;
+}
+.blanche{
+background-color: #fff;
+}
+.bleu{
+    background-color: #10016b;
+}
+.rouge{
+    background-color: #c30200;
+}
+.jaune{
+    background-color: #f0bd0f;
+}
+.noir{
+    background-color: #000;
+}
+/*zone blanche*/
+#w1{
+    grid-area: w1;
+}
+#w2{
+    grid-area: w2;
+}
+#w3{
+    grid-area: w3;
+}
+#w4{
+    grid-area: w4;
+}
+#w5{
+    grid-area: w5;
+}
+#w6{
+    grid-area: w6;
+}
+#w7{
+    grid-area: w7;
+}
+#w8{
+    grid-area: w8;
+}
+#w9{
+    grid-area: w9;
+}
+#wa{
+    grid-area: wa;
+}
+#wb{
+    grid-area: wb;
+}
+#wc{
+    grid-area: wc;
+}
+#wd{
+    grid-area: wd;
+}
+#we{
+    grid-area: we;
+}
+#wf{
+    grid-area: wf;
+}
+#wg{
+    grid-area: wg;
+}
+/*zone noire*/
+/*SI on ne mets pas de div"noire" alors on laisse un"." dams le template de notre grille*/
+#n1{
+    grid-area: n1;
+}
+#n2{
+    grid-area: n2;
+}
+#n3{
+    grid-area: n3;
+}
+#n4 
+    grid-area: n4;
+}
+/*zone bleu*/
+#b1{
+    grid-area: b1;
+}
+#b2{
+    grid-area: b2;
+}
+#b3{
+    grid-area: b3;
+}
+#b4{
+    grid-area: b4;
+}
+/*zone rouge*/
+#r1{
+    grid-area: r1;
+}
+#r2{
+   grid-area: r2; 
+}
+#r3{
+    grid-area: r3;
+}
+#r4{
+    grid-area: r4;
+}
+#r5{
+    grid-area: r5;
+}
+/*zone jaune*/
+#y1{
+    grid-area: y1;
+}
+#y2{
+    grid-area: y2;
+}
+#y3{
+  
+  grid-area: y3;
+}
+#y4{
+    grid-area: y4;
+}
+#y5{
+    grid-area: y5;
+}

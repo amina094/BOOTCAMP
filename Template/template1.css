@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+body>header{
+    background: linear-gradient(to top, #990807 80%, pink);
+
+}
+main{
+    background: linear-gradient(#990807, pink);
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+
+/*------------HEADER-----------*/
+header{
+    flex: 1;
+}
+h1{
+    color: white;
+    padding-top: 20px;
+    margin-left: 35px;
+    margin-bottom: 20px;
+}
+
+h1 span{
+    color: black;
+}
+
+nav{
+    background: #420001;
+    padding: 0 35px;
+}
+nav ul{
+    display: flex;
+}
+nav ul li a,
+nav ul li{
+    display: block;
+}
+nav ul li{
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #420001;
+}
+
+nav ul li a{
+width: 100%;
+}
+ nav ul li:hover{
+    background-color: #990807;
+   border: 1px solid black;
+}
+
+/*-----------main-------*/
+main{
+   flex: 4; 
+   padding: 10px 35px;
+   display: flex;
+}
+aside{
+    /*
+    flex est l'ecriture raccourci des éléments suivants(par rapport à ses fréres et soeurs):
+    -flex-grow : le facteur d'qggrqndissement
+    -flex-shirink: le facteur de retrecissement
+    -flex-basis:(optionnel) la taille minimuum
+    
+    */
+    flex: 1;
+    margin-right: 15px;
+}
+
+aside ul{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: #420001;
+    border-radius: 10px;
+}
+aside ul li,
+aside ul li a{
+    display: block;
+}
+aside ul li{
+padding-top: 7px;
+padding-left: 10px;
+padding-bottom: 7px;
+background: linear-gradient(to top, #420001, #660204);
+}
+aside ul li:hover{
+    background: linear-gradient(to top, #691113, #9b3c3e);
+}
+aside ul li a{
+    width: 100%;
+
+}
+
+main>article{
+    flex: 4;
+}
+
+section{
+    background-color: white;
+    border: 7px solid #631618;
+    border-radius: 10px;
+    padding: 10px;
+}
+section>header{
+    margin-bottom: 20px;
+}
+section>article{
+    margin-bottom: 20px;
+}
+article p{
+    margin-top: 5px;
+    text-align: justify;
+}
+
+footer ul {
+    display: flex;
+}
+footer ul{
+    width: 100%;
+}
+footer ul li{
+    margin: 5px;
+    padding-left: 5px;
+    border-left: 1px solid #420001;
+}
+footer ul li:first-child{
+    margin-bottom: 0;
+    padding: 0;
+    border: none;
+}
+footer ul li a:hover{
+    color: black;
+}
+
+
+
+
+

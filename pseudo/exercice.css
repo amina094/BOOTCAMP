@@ -1,0 +1,57 @@
+a:hover{
+    background-color: #7E3661;
+    color: white;
+    text-decoration: none; 
+}
+a:visited{
+    color: #FCB941;
+}
+a:active{
+    font-size: 30px;
+}
+/*--------------------------------------------------------*/
+caption{:
+    font-size: 25px;
+   text-transform: capitalize;
+}
+table{
+    border: none;
+}
+th,
+td{
+    padding: 10px;
+    text-align: center;
+}
+/* cibler la deuxiéme th de la premiére tr */
+tr:first-child th:nth-child(2){
+    font-size: 20px;
+    color: blue;
+}
+/*Cibler les tr en position paire dans la balise tbody*/
+tbody tr:nth-child(even){
+    background: #FCB941;
+}
+tbody tr:nth-child(odd){
+    background:  #f1654c;
+}
+/* Cibler la premiére cellule de chaque ligne en position impaire*/
+tr:nth-child(odd) td:first-child{
+    background: #7E3661;
+    color: white
+}
+tr:nth-child(even) td:first-child{
+    background: #888888;
+    color: white;
+}
+/*Cibler la derniére cellule de chqaue ligne en position impaire*/
+tr:nth-child(odd) td:last-child{
+    background-color: #8870FF;
+    color: white;
+}
+/*Cibler la derniére th qui posséde un qttribut rowspan*/
+th:last-child[rowspan]{
+    border-right: none;
+    border-top: none;
+}
+
+
